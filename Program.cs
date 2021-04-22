@@ -18,12 +18,13 @@ namespace CSTest
 {
     class Program
     {
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
-        
+            RoslynTest.Test();
+            Console.ReadLine();
         }
 
-        static async Task Main(string[] args)
+        static async Task Main2(string[] args)
         {
             var scheduler = new BatchRuleScheduler();
             await scheduler.RunAsync();
